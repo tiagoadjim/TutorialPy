@@ -20,7 +20,6 @@ function preguntas(){
     let acepta = prompt("Acepta los terminos?");
  /* ---------------------------NOTA MENTAL--------------------------------------*/
  /* || ES   "O" CONDICIONAL / && ES "Y" CONDICIONAL */
- /* GRACIAS URI POR RESPONDER EN CLASE :)*/
     // if (acepta == 'si' || 'Si')
 
     if (acepta == 'si' || acepta == 'Si') {
