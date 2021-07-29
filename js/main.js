@@ -23,7 +23,7 @@ function preguntas(){
  /* GRACIAS URI POR RESPONDER EN CLASE :)*/
     // if (acepta == 'si' || 'Si')
 
-    if ((acepta == 'si') || (acepta == 'Si') || (acepta = 'SI')){
+    if (acepta == 'si' || acepta == 'Si') {
         alert("Listo! Continue para ser redirigido!");
         console.log("Listo! " + nombre + " Esta siendo Rick Roleado!" );
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
