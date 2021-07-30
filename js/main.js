@@ -33,9 +33,9 @@ function preguntas(){
     } else {
         alert("Inaceptado");
        console.log("Se cancelo el tramite y se evito el rick roleo");
-       while (acepta !== 'Si') {
+       while (acepta !== 'Si'){
            alert("Al parecer no aceptaste los terminos y condiciones.");
-        acepta = prompt("Debe aceptar los terminos para poder proceder. Responda Si para poder continuar o bien cierre el sitio. ESCRIBA Si);
+        acepta = prompt("Debe aceptar los terminos para poder proceder. Responda Si para poder continuar o bien cierre el sitio. ESCRIBA Si");
     }
     captcha();
     }
@@ -49,7 +49,10 @@ function captcha(){
             continue;
         }
         alert("Haga click en continuar " + i + "  Veces para validar que usted No es un robot.");
+        console.log("Click nro " + i + " Validado con exito!")
     }
+
+
 }
 
 
