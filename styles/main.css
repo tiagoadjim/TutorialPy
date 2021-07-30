@@ -8,3 +8,9 @@ body, html {height: 100%}
   background-position: center;
   background-size: cover;
 }
+
+.bkg{
+
+background-color: chartreuse;
+
+}
