@@ -31,18 +31,25 @@ function preguntas(){
 
         return acepta;
     } else {
-        alert("Queda cancelado el tramite por la inaceptacion de los terminos y condiciones.");
+        alert("Inaceptado");
        console.log("Se cancelo el tramite y se evito el rick roleo");
-       while (acepta !== 'si' || acepta !== 'Si' || acepta !== 'SI') {
-        acepta = prompt("Debe aceptar los terminos para poder proceder. Responda Si para poder continuar o bien cierre el sitio.");
+       while (acepta !== 'Si') {
+           alert("Al parecer no aceptaste los terminos y condiciones.");
+        acepta = prompt("Debe aceptar los terminos para poder proceder. Responda Si para poder continuar o bien cierre el sitio. ESCRIBA Si);
     }
+    captcha();
     }
 
 }
 
-
+// esta funcion tiene como objetvo solicitarle al usuario ciertas acciones para validar que no es un robot. se hace uso del ciclo FOR para crear la cuenta regresiva y contar los clicks del usuario.
 function captcha(){
-    for (var i = 0; i < 10; i++){
+    for (var i = 3; i >= 0; i--){
+        if (i == 0){
+            continue;
+        }
         alert("Haga click en continuar " + i + "  Veces para validar que usted No es un robot.");
     }
 }
+
+
