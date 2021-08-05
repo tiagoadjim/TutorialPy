@@ -67,7 +67,7 @@ function realizarCompra(){
     let precio = 0;
     let metodoPago = "MercadoPago"; //de momento solo se acepta este medio de pago.
     let plan;
-const tipoPlan = {precio, metodoPago, plan};
+
 
     alert("Bienvenido al sistema de suscripciones");
      plan = parseFloat(prompt("Elija su plan: /n 1 - AR$1299 /n 2 - AR$2299 /n Ingrese el numero correspondiente a la suscripcion que desee contratar."));
@@ -75,10 +75,13 @@ let precio = 1299;
     if (plan == 1){
 
     alert("Su total a pagar es de AR$" + precio);
+    const tipoPlan = {precio, metodoPago, plan};
 return tipoPlan;
+
     } else if (plan == 2){
         let precio = 2299;
         alert("Su total a pagar es de AR$" + precio);
+        const tipoPlan = {precio, metodoPago, plan};
         return tipoPlan
     }
 
